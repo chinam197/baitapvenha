@@ -1,0 +1,78 @@
+
+@font-face {
+    font-family: asap;
+    src: url(./fonts/Asap-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+    font-family: SFU;
+    src: url(./fonts/SFUStoneSansSemiBold.TTF);
+}
+:root {
+    --color-title: #bf4240;
+    --color-paragraph: #3f3424;
+
+}
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: asap;
+}
+
+/*  */
+.back-ground {
+    background-image: url(./images/ha-noi-melody-residences-cover\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container{
+    width: 630px;
+    height: 250px;
+   
+    background-color: rgba(255, 255, 255, 0.779);
+    border-radius: 5px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20%;
+}
+.information {
+    position: relative;
+    width: fit-content;
+   margin: 0px auto;
+   top: 40px;
+   
+}
+.information > .title {
+    color:var(--color-title);
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+.information > .paragraph {
+   color: var(--color-paragraph);
+   margin-top: 5px;
+   
+}
+.location-address {
+    font-size: 20px;
+    color: var(--color-paragraph);
+    margin-top: 20px;
+}
+.back-ground-cost {
+    font-size: 20px;
+    width: 120px;
+   padding:12px 0px;
+   background-color:#dd5e56;
+   color: white;
+   text-align: center;
+   border-radius: 3px;
+    position: absolute;
+   right: 30px;
+   bottom: -24px;
+}
+.cost {
+    font-family: SFU;
+}
+

@@ -1,0 +1,107 @@
+@font-face {
+    font-family: asap;
+    src: url(./fonts/Asap-VariableFont_wdth\,wght.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:asap;
+}
+body{
+    height: 100vh;
+}
+
+.wraper-background{
+   width: 1600px;
+    height: 400px;
+    position: relative;
+    margin: 0px auto;
+}
+.background-image {
+   max-width: 100%;
+   max-height: 100%;
+   min-width: auto;
+    margin: 0px auto;
+
+   
+}
+.img-vingroup {
+     max-width: 100%;
+    max-height: 100%;
+    filter: brightness(75%);
+}
+.logo-info {
+    position: absolute;
+}
+
+.logo-vin {
+position: absolute;
+bottom: 0;
+width: 300px;
+max-width: 320px;
+min-height: auto;
+height: 200px;
+background-color: white;
+text-align: center;
+margin-left: 50px;
+
+}
+.logo-vingroup {
+    width: 150px;
+    margin-top:90px;
+    max-width: 160px;   
+}
+.info {
+    position: absolute;
+    bottom: 0;
+    margin-left:380px;
+    height: 200px;
+    color: white;
+    width: 500px;
+}
+.title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.paragraph {
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 20px;
+}
+.number-info {
+    font-size: 25px;
+}
+/* thanh menu */
+.container-list {
+    position: relative;
+}
+.navbar {
+
+position: absolute;
+bottom: -160px;
+right:150px;
+}
+.navbar > .main-list {
+    display: flex;
+   
+}
+.main-list > .list {
+    list-style: none;
+    margin-right: 20px;
+    border-bottom: 3px solid transparent;
+}
+.list > a {
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    font-weight: 600;
+}
+.main-list > .list:hover {
+    border: red;
+    border-bottom: 3px solid red;
+}
+
+.main-list > .list:hover > a{
+    color:red;
+}

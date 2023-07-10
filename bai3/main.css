@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: asap;
+}
+@font-face {
+    font-family:asap ;
+    src: url(./fonts/Asap-VariableFont_wdth\,wght.ttf);
+}
+.container {
+    width: 1270px;
+    margin: 0px auto;
+    min-height: auto;
+}
+.wraper {
+   margin-bottom: 20px;
+}
+.wraper > .title {
+   font-size: 18px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin-left: 5px;
+   position: relative;
+}
+.wraper > .list {
+    display: flex;
+}
+.title::after {
+   content:"";
+   position: absolute;
+   width:840px;
+  border-bottom: 2px solid rgb(234, 225, 225);
+  right: 0;
+  bottom: 10px;
+  border-radius: 99px;
+}
+
+.province-city {
+   display: block;
+   border-radius: 99px;
+   height: 60px;
+   width:140px;
+   background-color:#e4e4e4;
+   color:black ;
+   text-align: center;
+  
+}
+.province-city ~ li {
+    margin-left: 15px;
+} 
+
+.province-city > .click-link {
+  text-decoration: none;
+}
+
+.province-city .city_province {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color:black;
+}
+.province-city .info {
+    font-size: 12px;
+    color: black;
+}
+/* phan hover */
+.list > .province-city:hover {
+    background-color: #af7b37;
+   
+}
+.list  .province-city:hover .city_province{
+color: white;
+}
+.list  .province-city:hover .info {
+    color: white;
+}
+
+/* phan duoi */
+.img-provine-city {
+    width: 400px;
+    height: 200px;    
+}
+ .img-provine-city ~ div.img-provine-city{
+  margin-left: 40px;
+}
+
+
+img[alt="img"] {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    filter: brightness(70%);
+}
+.wraper-img {
+    width: 1270px;
+    height: auto;
+    display: flex;
+   margin-top: 20px;
+   position: relative;
+}
+
+.info-img {
+    position: absolute;
+    top: 10px;
+    padding: 15px 15px;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    
+}
+.sell {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-size: 12px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+}
+strong.real-estate-quantity {
+    font-size: 13px;
+}
