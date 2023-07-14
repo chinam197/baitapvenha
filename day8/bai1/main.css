@@ -1,0 +1,189 @@
+@font-face {
+    font-family: manrope;
+    src: url(./font/Manrope-VariableFont_wght.ttf);
+}
+:root {
+--color-element:black;
+--color-background-list:white;
+
+}
+/* thuoc tinh chung */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: manrope;
+
+}
+/* background */
+.background-wraper {
+    background-image: url(https://images.unsplash.com/photo-1689154345860-fa9dab2f92c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0MHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-repeat: no-repeat;
+    background-size:cover;
+    min-height: 100vh;
+    margin: 0px auto;
+    position: relative;
+}
+
+.container-menu {
+    height: 90px;
+    max-width: 1400px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    
+}
+
+/* phan logo sandbox */
+.container-logo-sandbox {
+    display: flex;
+    align-items: center;
+    max-height: fit-content;
+   margin-right: 400px;
+}
+.logo-sandbox {
+    max-height: 50px;
+}
+.logo-list-menu {
+    position: relative;
+}
+.logo-list-menu::after {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f078";
+    position:absolute;
+    
+    font-size: 13px;
+    top: 5px;
+    padding-left: 5px;
+}
+.container-chidl-list {
+    width: 1420px;
+    height: 490px;
+    margin: 10px auto;
+    background-color:var(--color-background-list);
+    border-radius: 10px;
+    display: flex;
+    display: none;
+    position:absolute;
+    left: -700px;
+    top: 50px;
+
+}
+.list:hover{
+    color: gray;
+}
+.list:hover .container-chidl-list{
+    display: flex;
+}
+
+
+
+/* phan menu */
+
+.container-list {
+  
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    justify-self: flex-end;
+    margin-left: 120px;
+}
+
+.main-list {
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+    position: relative;
+}
+
+.last-child {
+    position: absolute;
+    right: -40px;
+}
+
+/* phan con trong menu */
+
+.title-list-usage{
+    margin-top: 30px;
+}
+.title-list-styleguide {
+    margin-top: 20px;
+}
+
+
+.container-usage-syleguide {
+    width: 500px;
+    max-height: 450px;
+    border-right: 2px solid rgb(202, 200, 200);
+}
+.wrapper-usage {
+    height: 250;
+    width: 400px;
+    margin: 0px auto;
+}
+
+
+.list-usage {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 150px;
+    margin-top: 10px;
+    list-style-type: none;
+}
+.list-usage > li > a {
+    text-decoration: none;
+    color:var(--color-element);
+} 
+/*  */
+.list-item {
+    line-height: 40px;
+}
+.wrapper-styleguide {
+    width: 400px;
+    height: 300px;
+    margin: 0px auto;
+}
+.list-styleguide {
+line-height: 40px;
+margin-top: 10px; 
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+height: 190px;
+list-style: none;
+
+}
+.list-styleguide > li > a {
+    color: var(--color-element);
+    text-decoration: none;
+}
+
+/* ben canh */
+
+.elements {
+    width: 700px;
+    margin: 0px auto;
+
+}
+.title-elements {
+    margin-top: 30px;
+}
+.wrapper-elements {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    flex-direction: column;
+    height: 380px;
+    line-height: 40px;
+    margin-top: 10px;
+    
+}
+.list-item-elements {
+    list-style: none;
+   
+}
+.list-item-elements > a {
+    text-decoration: none;
+    color: var(--color-element);
+}

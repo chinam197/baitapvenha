@@ -1,0 +1,257 @@
+@font-face {
+    font-family: nunito;
+    src: url(./fonts/Nunito-VariableFont_wght.ttf);
+}
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: nunito;
+}
+body {
+    background-color: gray;
+}
+
+.container-shopping-cart {
+    height:100vh;
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    right: 0;
+}
+
+/* chinh phan titlt */
+
+.title-shopping {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(222, 222, 222);
+    height: 60px;
+    
+    
+}
+
+.shopping-cart {
+    margin-left: 20px;
+    position: relative;
+}
+.shopping-cart::after {
+content: "4";
+font-size: 15px;
+text-align: center;
+width: 20px;
+height: 20px;
+background-color: rgb(61, 61, 255);
+border-radius: 99px;
+position: absolute;
+right: -23px;
+top: -6px;
+color: white;
+
+
+}
+.logo-xmark-close{
+    width: 20px;
+    height: 20px;
+    border-radius:  99px;
+    background-color:rgb(226, 149, 5);
+   color: white;
+   margin-right: 40px;
+   display: flex;
+   align-items: center;
+}
+.close-shop {
+    margin: 0px auto;
+}
+.info-product {
+    margin-left: 10px;
+}
+/* phan san pham */
+
+.list-product {
+    overflow-y:scroll;
+    height: 240px;
+    max-width:100% ;
+}
+.product {
+    height: 70px;
+    width: 70px;
+    background-color:wheat;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 50px;
+}
+.product-info {
+    margin-bottom: 10px;
+    color: gray;
+}
+.product > img {
+    height: 60px;
+    margin: 0px auto;
+}
+.wraper-input-number {
+    display: inline-block;
+}
+.wraper-input-number::before {
+    content: "-";
+    position: relative;
+    left: 22px;
+    color: gray;
+    display: inline-block;
+}
+.wraper-input-number::after {
+content: "+";
+position: relative;
+right: 22px;
+color: gray;
+display: inline-block;
+margin-right: 50px;
+}
+.number-product {
+    width: 70px;
+    height: 20px;
+    border-radius: 70px;
+    border-color: gainsboro;
+    text-indent: 45%;
+}
+
+
+
+
+
+.wrapper-iphone {
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 120px;
+    width: 100%;
+    background-color:#f2f2f2;
+}
+
+.wrapper-iphone::after {
+    content: "";
+    border-bottom: 2px solid gainsboro;
+    width: 97%;
+    position: absolute;
+    bottom: 0px;
+}
+.input-number {
+    margin-right: 120px;
+    
+    
+}
+.logo-xmark-product {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+}
+/*  */
+.subtotal-money {
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+.subtotal {
+    font-size: 20px;
+}
+.money {
+    color: orange;
+    font-size: 25px;
+}
+
+.about {
+    width: 380px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+   
+}
+.paragraph-taxes {
+    font-size: 14px;
+    color: gray;
+}
+.wrapper-button {
+   margin-top: 10px;
+}
+.view-card {
+    display: block;
+    height: 50px;
+    width: 380px;
+    text-decoration: none;
+    color:gray;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border: 2px solid gray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    
+}
+
+.add-to-card {
+    display: block;
+    height: 50px;
+    width: 380px;
+    background-color:rgb(86, 86, 255);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+
+
+/* phan logo car and ben canh */
+.logo-card {
+    width: 55px;
+    height: 55px;
+    border-radius: 99px;
+    border: 1px solid rgb(41, 41, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(41, 41, 255) ;
+}
+
+.wraper-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* hover */
+
+.view-card:hover {
+background-color: aliceblue;
+color: black;
+}
+
+
+.add-to-card:hover {
+    background-color: rgb(29, 29, 247) ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
